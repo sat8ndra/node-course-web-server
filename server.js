@@ -69,6 +69,14 @@ app.get('/contact', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  //res.send('About Page');
+  res.render('projects.hbs', {
+    pageTitle: 'Project Page',
+    //currentYear: new Date().getFullYear()
+  });
+});
+
 // /bad - send back json with errorMessage
 
 app.get('/bad', (req, res) => {
